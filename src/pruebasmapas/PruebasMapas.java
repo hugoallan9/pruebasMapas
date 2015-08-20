@@ -18,9 +18,22 @@ public class PruebasMapas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Mapa mapa = new Mapa("/home/hugo/Documents/CSV", "/home/hugo/Documents");
-        mapa.descarga();
-        mapa.mapasIPC();
+        Mapa mapa = new Mapa("/home/hugo/Descargas/csv/preprimaria", "/home/hugo/Descargas/csv/preprimaria");
+        //Mapa.descargaDepartamental();
+        mapa.preprimaria();
+        
+        mapa = new Mapa("/home/hugo/Descargas/csv/basicos", "/home/hugo/Descargas/csv/basicos");
+        //Mapa.descargaDepartamental();
+        mapa.basicos();
+        
+        mapa = new Mapa("/home/hugo/Descargas/csv/diversificado", "/home/hugo/Descargas/csv/diversificado");
+        //Mapa.descargaDepartamental();
+        mapa.diversificado();
+        
+        mapa = new Mapa("/home/hugo/Descargas/csv/primaria", "/home/hugo/Descargas/csv/primaria");
+        //Mapa.descargaDepartamental();
+        mapa.primaria();
+
     }
     
 }
